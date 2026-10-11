@@ -1,0 +1,1 @@
+package io.baozhu.copilot.api; import jakarta.validation.constraints.NotBlank; public record ColumnSpec(@NotBlank String name,@NotBlank String type,boolean nullable,boolean unique) {}
