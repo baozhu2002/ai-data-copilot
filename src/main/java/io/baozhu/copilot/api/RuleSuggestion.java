@@ -1,0 +1,1 @@
+package io.baozhu.copilot.api; public record RuleSuggestion(String ruleType,String expression,String rationale,String severity,double confidence) {}
