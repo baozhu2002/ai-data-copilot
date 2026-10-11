@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ai-data-copilot
+  datasource:
+    url: jdbc:h2:file:./data/copilot;AUTO_SERVER=TRUE
+    username: sa
+    password:
+  sql:
+    init:
+      mode: always
+server:
+  port: ${PORT:8081}
+ai:
+  provider: ${AI_PROVIDER:heuristic}
+  base-url: ${AI_BASE_URL:https://api.openai.com/v1}
+  api-key: ${AI_API_KEY:}
+  model: ${AI_MODEL:gpt-4o-mini}
+management:
+  endpoints.web.exposure.include: health,info,metrics
