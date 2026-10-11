@@ -1,0 +1,1 @@
+package io.baozhu.copilot.api; import java.util.*; public record SqlReviewResponse(boolean safe,List<String> violations,String normalizedSql) {}
