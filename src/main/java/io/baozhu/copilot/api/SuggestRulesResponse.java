@@ -1,0 +1,1 @@
+package io.baozhu.copilot.api; import java.util.*; public record SuggestRulesResponse(String provider,String tableName,List<RuleSuggestion> suggestions,String promptVersion) {}
