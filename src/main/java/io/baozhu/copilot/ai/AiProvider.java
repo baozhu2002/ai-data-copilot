@@ -1,0 +1,1 @@
+package io.baozhu.copilot.ai; import io.baozhu.copilot.api.*; import java.util.*; public interface AiProvider { String name(); List<RuleSuggestion> suggestRules(String table,List<ColumnSpec> columns,List<Map<String,Object>> samples,String description); }
