@@ -1,0 +1,1 @@
+package io.baozhu.copilot.api; import jakarta.validation.Valid; import jakarta.validation.constraints.*; import java.util.*; public record SuggestRulesRequest(@NotBlank String tableName,@NotEmpty List<@Valid ColumnSpec> columns,List<Map<String,Object>> sampleRows,String businessDescription) {}
