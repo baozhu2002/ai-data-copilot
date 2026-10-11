@@ -1,0 +1,1 @@
+package io.baozhu.copilot.api; import jakarta.validation.constraints.*; import java.util.*; public record SqlReviewRequest(@NotBlank String sql,@NotEmpty Set<@NotBlank String> allowedTables) {}
